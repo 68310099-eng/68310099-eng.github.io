@@ -1,77 +1,32 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAAHA Showcase</title>
-    <style>
-        /* สไตล์พื้นหลังและฟอนต์ */
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #0f172a; /* สีน้ำเงินเข้มแบบ Space */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden;
-        }
+<title>DEEHA</title>
 
-        /* กรอบตกแต่ง */
-        .container {
-            position: relative;
-            padding: 60px 100px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 2px solid transparent;
-            background-clip: padding-box;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
-        }
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    font-family:Arial;
+}
 
-        /* เอฟเฟกต์เส้นขอบไล่สี (Gradient Border) */
-        .container::before {
-            content: "";
-            position: absolute;
-            top: -5px; bottom: -5px;
-            left: -5px; right: -5px;
-            background: linear-gradient(45deg, #00f2fe, #4facfe, #7000ff, #f000ff);
-            border-radius: 25px;
-            z-index: -1;
-            animation: borderRotate 4s linear infinite;
-        }
+h1{
+    font-size:80px;
+    color:white;
+    text-shadow:0 0 20px #fff, 0 0 40px #00f;
+    letter-spacing:10px;
+}
+</style>
 
-        /* ตัวอักษร DAAHA */
-        h1 {
-            margin: 0;
-            font-size: 80px;
-            font-weight: 900;
-            color: #ffffff;
-            letter-spacing: 15px;
-            text-transform: uppercase;
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
-                         0 0 40px rgba(79, 172, 254, 0.8);
-        }
-
-        /* Animation หมุนสีขอบ */
-        @keyframes borderRotate {
-            0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(360deg); }
-        }
-
-        /* ทำให้ขยับได้เวลาเอาเมาส์ไปวาง */
-        .container:hover {
-            transform: scale(1.05);
-        }
-    </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>DAAHA</h1>
-    </div>
+<h1>DEEHA</h1>
 
 </body>
 </html>
